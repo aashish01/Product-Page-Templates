@@ -1,0 +1,143 @@
+.product{
+    background: #e3e3d8;
+	font-family: sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+    padding: 15px;
+}
+.card{
+	width: 300px;
+	height: 370px;
+	background: #f4f4f4;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0;
+	transform: scale(0.95);
+	transition: box-shadow .5s ease-in-out,
+				transform .5s ease-in-out;
+	overflow: hidden;
+    margin-bottom: 10px;
+}
+.card:hover{
+	transform: scale(1);
+	box-shadow: 5px 20px 30px rgba(0,0,0,.2);
+}
+.imgBox{
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+.product-new-label{
+    color:#fff;
+    background-color:#ef5777;
+    font-size:12px;
+    text-transform:uppercase;
+    padding:2px 7px;
+    display:block;
+    position:absolute;
+    top:10px;
+    left:0
+}
+.details{
+    background-color:#fff;
+    text-align:center;
+    padding:10px 20px;
+    margin:0 auto;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-50px;
+    z-index:1;
+    transition:all .3s
+}
+.details a:link {
+    text-decoration: none;
+}
+.details:hover{
+	bottom: 0;
+}
+.textContent{
+	position: relative;
+	margin-top: 10px;
+	color: #555;
+}
+.productName{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+
+}
+.price{
+    text-decoration: none;
+    font-size:20px; 
+    font-weight:700;
+    letter-spacing:.6px;
+    margin-top: 5px;
+    margin-bottom:5px;
+    text-align: center;
+}
+
+.price span{
+    color:#999;
+    font-size:13px;
+    font-weight:400;
+    text-decoration:line-through;
+    margin-left:3px;
+    display:inline-block
+}
+button{
+	width: 100%;
+	padding: 5px 0;
+	margin: 10px 0;
+	background: #45b9e0;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+button:hover{
+	background: orange;
+}
+.description{
+	background:whitesmoke;
+	position: absolute;
+	width: 125px;
+	height: 135px;
+	top: -70px;
+	right: -70px;
+	border-radius: 0 0 100px 100px;
+}
+.description .icon{
+	position: absolute;
+	top: 85px;
+	right: 73px;
+	color:rgb(230, 19, 19);
+    font-weight: 600;
+}
+
+@media(max-width: 767px){
+	.card{
+        width: 500px;
+        height: 420px;
+        background: #f4f4f4;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0;
+        transform: scale(0.95);
+        transition: box-shadow .5s ease-in-out,
+                    transform .5s ease-in-out;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width:990px){
+    .card{
+        margin-bottom:30px
+    }
+}
